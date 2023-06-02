@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.servlets.DynamicDropdown">
+  <property name="service.description" type="String" value=" Dynamic Drop Down"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="/apps/dropDownListing"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="blissProject.core.servlets.DynamicDropdown"/>
+</scr:component>

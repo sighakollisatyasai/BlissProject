@@ -1,0 +1,29 @@
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}" />
+<sly data-sly-use.itemCount="itemcount.js" data-sly-unwrap />
+<sly data-sly-use.blogSectionModel="blissProject.core.models.BlogSectionModel"/>
+<!-- blog -->
+      <div class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                          <h2>${blogSectionModel.title}</h2>
+                          <p>${blogSectionModel.desc}</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+                
+    <sly data-sly-list.card="${itemCount}" data-sly-test="${itemCount}">
+
+                 <div  class=" col-md-4">
+                  <sly  data-sly-resource="${'cards{0}' @format=cardList.index,resourceType='blissProject/components/content/customComponents/cardBlogComponent'}"/>
+                     </div>
+
+     </sly>
+
+            </div>
+
+         </div>
+      </div>
+      <!-- end blog -->

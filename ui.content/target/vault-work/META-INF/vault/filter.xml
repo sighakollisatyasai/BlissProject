@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/blissProject" mode="merge"/>
+    <filter root="/content/blissProject" mode="merge"/>
+    <filter root="/content/dam/blissProject" mode="merge"/>
+    <filter root="/content/experience-fragments/blissProject" mode="merge"/>
+</workspaceFilter>

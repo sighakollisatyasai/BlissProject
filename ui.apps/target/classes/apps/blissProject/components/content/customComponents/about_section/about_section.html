@@ -1,0 +1,23 @@
+<sly data-sly-use.aboutSectionModel="blissProject.core.models.AboutSectionModel"/>
+<!-- about -->
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex grig">
+               <div class="col-md-6">
+                  <div class="about_img">
+                      <figure><img src="${aboutSectionModel.image}" alt=${properties.alttext}/>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-md-6 order">
+                  <div class="titlepage text_align_left">
+                                      <h2>${aboutSectionModel.title}</h2>
+                                       <p>${aboutSectionModel.desc}</p>
+                                     <a class="read_more" href="#">${aboutSectionModel.btntext}</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- end blog -->

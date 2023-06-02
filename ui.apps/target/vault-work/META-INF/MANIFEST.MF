@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: blissProject - UI apps
+Content-Package-Roots: /apps/blissProject
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: tech
+Implementation-Vendor-Id: blissProject
+Content-Package-Dependencies: adobe/cq60:core.wcm.components.content:2
+ .7.0,adobe/cq60:core.wcm.components.config:2.7.0
+Content-Package-Type: application
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_321
+Content-Package-Description: UI apps package for blissProject
+Content-Package-Id: blissProject:blissProject.blissProject.ui.apps:1.0
+ -SNAPSHOT
+

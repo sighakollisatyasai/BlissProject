@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/blissProject.core.services.ConfigAnnotation">
+  <OCD id="blissProject.core.services.ConfigAnnotation" name="Test Osgi Configuration" description="">
+    <AD id="sName" type="String" name="Student Name" description="Name of the student"/>
+    <AD id="sAge" type="Integer" name="Student Age" description="Age of the student"/>
+  </OCD>
+  <Designate pid="blissProject.core.services.OsgiImplementService">
+    <Object ocdref="blissProject.core.services.ConfigAnnotation"/>
+  </Designate>
+</metatype:MetaData>

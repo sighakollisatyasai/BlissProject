@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.servlets.AssetReplication">
+  <property name="service.description" type="String" value="Asset Replication Servlet"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/replicate-assets"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="replicator" interface="com.day.cq.replication.Replicator" field="replicator"/>
+  <implementation class="blissProject.core.servlets.AssetReplication"/>
+</scr:component>

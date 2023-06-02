@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Blog card Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.commons.editor.dialog.childreneditor.v1,core.wcm.components.tabs.v1.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_tabs_v1"
+    trackingFeature="core-components:tabs:v1">
+    <content
+        granite:class="cmp-tabs__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        maximized="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The item that is active by default."
+                                                fieldLabel="Title"
+                                                name="./title">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cmp-tabs-v1-dialog-edit-hook="activeSelect"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                </items>
+                                            </title>
+                                            <desc
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The item that is active by default."
+                                                fieldLabel="Description"
+                                                name="./desc">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cmp-tabs-v1-dialog-edit-hook="activeSelect"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                </items>
+                                            </desc>
+                                            <buttontext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The item that is active by default."
+                                                fieldLabel="Buttontext"
+                                                name="./btntext">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cmp-tabs-v1-dialog-edit-hook="activeSelect"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                </items>
+                                            </buttontext>
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="The item that is active by default."
+                                                fieldLabel="Card Image"
+                                                name="./cardimage"
+                                                rootPath="/content/dam/blissProject/blissimages">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cmp-tabs-v1-dialog-edit-hook="activeSelect"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                </items>
+                                            </image>
+                                            <spantext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The item that is active by default."
+                                                fieldLabel="Spantext"
+                                                name="./spantext">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cmp-tabs-v1-dialog-edit-hook="activeSelect"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text=""
+                                                        value=""/>
+                                                </items>
+                                            </spantext>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

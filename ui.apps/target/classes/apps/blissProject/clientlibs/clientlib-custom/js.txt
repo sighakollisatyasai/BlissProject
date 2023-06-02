@@ -1,0 +1,12 @@
+#base=js
+bootstrap.bundle.min.js
+bootstrap.js
+bootstrap.min.js
+bootstrap-datepicker.min.js
+custom.js
+jquery.min.js
+jquery.nice-select.min.js
+jquery-3.0.0.min.js
+niceCountryInput.js
+owl.carousel.min.js
+validator.js

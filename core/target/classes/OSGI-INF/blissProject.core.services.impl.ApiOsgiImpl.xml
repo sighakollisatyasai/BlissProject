@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.services.impl.ApiOsgiImpl" immediate="true" activate="activate">
+  <service>
+    <provide interface="blissProject.core.services.ApiOsgiInterface"/>
+  </service>
+  <implementation class="blissProject.core.services.impl.ApiOsgiImpl"/>
+</scr:component>

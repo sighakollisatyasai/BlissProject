@@ -1,0 +1,5 @@
+blissProject\core\listeners\SimpleResourceListenerTest.class
+blissProject\core\filters\LoggingFilterTest.class
+blissProject\core\servlets\SimpleServletTest.class
+blissProject\core\models\HelloWorldModelTest.class
+blissProject\core\schedulers\SimpleScheduledTaskTest.class

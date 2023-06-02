@@ -1,0 +1,41 @@
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}" />
+<sly data-sly-use.itemCount="itemcount.js" data-sly-unwrap />
+           <!-- priceing -->
+           <sly data-sly-use.priceModel="blissProject.core.models.PriceingSectionModel"/>
+      <div class="priceing">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                       <h2>${priceModel.title}</h2>
+                       <p>${priceModel.desc}</p>
+
+                  </div>
+               </div>
+            </div>
+<div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+<sly data-sly-test="${!itemCount}">
+    <div>
+        <h2>Card Count is Zero .Please add Atleast one value</h2>
+    </div>
+</sly>
+
+<sly data-sly-list.card="${itemCount}" data-sly-test="${itemCount}">
+
+  <div class="col-md-6" >
+
+    <sly data-sly-resource="${'cards{0}' @ format=cardList.index ,resourceType='blissProject/components/content/customComponents/cardComponent'}"></sly>
+
+  </div>
+
+</sly>
+
+
+
+                   </div>
+               </div>
+            </div>
+         </div>
+      </div>

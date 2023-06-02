@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.servlets.AssetSizing">
+  <property name="sling.filter.scope" type="String" value="REQUEST"/>
+  <property name="sling.filter.pattern" type="String" value="/content/dam/blissProject/blissimages*"/>
+  <service>
+    <provide interface="javax.servlet.Filter"/>
+  </service>
+  <implementation class="blissProject.core.servlets.AssetSizing"/>
+</scr:component>

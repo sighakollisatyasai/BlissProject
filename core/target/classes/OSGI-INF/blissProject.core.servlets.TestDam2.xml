@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.servlets.TestDam2">
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/osgiurl"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="config" interface="blissProject.core.services.ApiOsgiInterface" field="config"/>
+  <reference name="resoureResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resoureResolverFactory"/>
+  <implementation class="blissProject.core.servlets.TestDam2"/>
+</scr:component>

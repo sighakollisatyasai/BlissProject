@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.servlets.TestImageDam">
+  <property name="service.description" type="String" value="Sample Image Upload"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/uploadImage"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="blissProject.core.servlets.TestImageDam"/>
+</scr:component>

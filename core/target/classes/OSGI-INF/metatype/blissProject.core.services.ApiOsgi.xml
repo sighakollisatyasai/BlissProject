@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/blissProject.core.services.ApiOsgi">
+  <OCD id="blissProject.core.services.ApiOsgi" name="Api Url Custom Osgi" description="Api Url Custom Osgi">
+    <AD id="getUrl" type="String" name="Url of Api" description="URL"/>
+    <AD id="getAuthorKey" type="String" name="Authorization key" description="Key to Access Api"/>
+    <AD id="getTimeOut" type="Integer" name="Time Out" description="Time to close connection"/>
+  </OCD>
+  <Designate pid="blissProject.core.services.impl.ApiOsgiImpl">
+    <Object ocdref="blissProject.core.services.ApiOsgi"/>
+  </Designate>
+</metatype:MetaData>

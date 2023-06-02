@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Implementation-Title: blissProject - UI content
+Content-Package-Roots: /conf/blissProject,/content/blissProject,/conte
+ nt/dam/blissProject,/content/experience-fragments/blissProject
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: tech
+Implementation-Vendor-Id: blissProject
+Content-Package-Dependencies: blissProject:blissProject.blissProject.u
+ i.apps:1.0-SNAPSHOT
+Content-Package-Type: content
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_321
+Content-Package-Description: UI content package for blissProject
+Content-Package-Id: blissProject:blissProject.blissProject.ui.content:
+ 1.0-SNAPSHOT
+

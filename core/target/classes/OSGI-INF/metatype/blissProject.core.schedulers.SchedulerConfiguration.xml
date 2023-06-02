@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/blissProject.core.schedulers.SchedulerConfiguration">
+  <OCD id="blissProject.core.schedulers.SchedulerConfiguration" name="Scheduler Replication" description="Replicating a page based on scheduler">
+    <AD id="cronExpression" type="String" name="Cron Expression" description="time pattern when to replicate" default="0/20\ *\ *\ *\ *\ ?"/>
+    <AD id="schedulerName" type="String" name="Scheduler Name" description="Name of the scheduler" default="Replication\ Scheduler"/>
+  </OCD>
+  <Designate pid="blissProject.core.schedulers.SchedulerService">
+    <Object ocdref="blissProject.core.schedulers.SchedulerConfiguration"/>
+  </Designate>
+</metatype:MetaData>

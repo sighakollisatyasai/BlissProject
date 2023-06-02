@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="blissProject.core.servlets.ReplicationServlet">
+  <property name="service.description" type="String" value="Simple Demo Servlet"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/replica"/>
+  <property name="sling.servlet.extensions" type="String" value="txt"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="replicator" interface="com.day.cq.replication.Replicator" field="replicator"/>
+  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="blissProject.core.servlets.ReplicationServlet"/>
+</scr:component>

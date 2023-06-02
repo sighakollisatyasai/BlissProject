@@ -1,0 +1,45 @@
+      <!-- appointment -->
+          <sly data-sly-use.appointmentSectionModel="blissProject.core.models.AppointmentSectionModel"/>
+      <div class="appointment">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="titlepage text_align_center">
+                        <h2>${appointmentSectionModel.title}</h2>
+                         <p>${appointmentSectionModel.desc}</p>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-6 ">
+                           <input class="form_control" placeholder="Your name" type="type" name=" Name"> 
+                        </div>
+                        <div class="col-md-6">
+                           <input class="form_control" placeholder="Email" type="type" name="Email"> 
+                        </div>
+                        <div class="col-md-6">
+                           <input class="form_control" placeholder="Phone Number" type="type" name="Phone Number">                          
+                        </div>
+                        <div class="col-md-6">
+                           <input class="form_control" placeholder="Select Massage spa" type="type" name="Select">                          
+                        </div>
+                        <div class="col-md-6 ">
+                           <input class="form_control" placeholder="Time" type="type" name=" Time"> 
+                        </div>
+                        <div class="col-md-6">
+                           <input type="text" class="form_control" id="my_date_picker" placeholder="Select Date" >
+                        </div>
+                        <div class="col-md-12">
+                           <textarea style=" color: #d0d0cf;" class="textarea" placeholder="Message" type="type" name="message">message </textarea>
+                        </div>
+                        <div class="col-md-12">
+                                <button class="send_btn">${appointmentSectionModel.btntext}</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end appointment -->

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: tech
+Build-Jdk: 15.0.2
+Implementation-Title: blissProject - All
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: blissProject
+Content-Package-Roots: /apps/blissProject-packages,/apps/blissProject-ve
+ ndor-packages
+Content-Package-Description: All content package for blissProject
+Content-Package-Id: blissProject:blissProject.blissProject.all:1.0-SNAPS
+ HOT
+Content-Package-Type: application
+

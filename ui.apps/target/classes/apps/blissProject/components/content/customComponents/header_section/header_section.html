@@ -1,0 +1,42 @@
+
+<sly data-sly-use.headerSectionModel="blissProject.core.models.HeaderSectionModel"/>
+
+
+
+<!-- header -->
+         <header class="header-area">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class=" col-md-3 col-sm-3">
+                       <div class="logo">
+		                      <a href="${headerSectionModel.href}.html">${headerSectionModel.logo}</a>
+                     </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                                  <sly data-sly-list.item="${headerSectionModel.quickLinksList}">
+
+                                      <li data-sly-test="${currentPage.title.toLowerCase==item.navtitle.toLowerCase}"><a class="active" href="${item.navhref}.html">${item.navtitle.toLowerCase}</a></li>
+
+                                      <li data-sly-test="${currentPage.title.toLowerCase!=item.navtitle.toLowerCase}"><a href="${item.navhref}.html">${item.navtitle.toLowerCase}</a></li>
+
+                                 </sly>
+
+                              <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                              <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+                           </ul>
+                           <button class="nav-toggler">
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+<!-- end header inner -->
+

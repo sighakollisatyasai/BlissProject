@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 15
+Created-By: 15.0.2 (Oracle Corporation)
+Bnd-LastModified: 1685511578979
+Bundle-Category: blissProject
+Bundle-Description: Bundles for Integration Tests for blissProject
+Bundle-ManifestVersion: 2
+Bundle-Name: blissProject - Integration Tests Bundles
+Bundle-SymbolicName: blissProject.blissProject.it.tests
+Bundle-Version: 1.0.0.20230531053938978
+Export-Package: blissProject.it.tests;version="1.0";uses:="org.apache.sl
+ ing.junit.annotations,org.junit,org.junit.runner"
+Import-Package: blissProject.core.models;version="[1.0,2)",org.apache.sl
+ ing.api.resource;version="[2.11,3)",org.apache.sling.junit.annotations;
+ version="[1.0,2)",org.apache.sling.settings;version="[1.3,2)",org.junit
+ ;version="[4.8,5)",org.junit.runner;version="[4.8,5)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Sling-Test-Regexp: .*Test
+Tool: Bnd-5.2.0.202010142003
+
